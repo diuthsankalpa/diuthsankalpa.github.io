@@ -1,65 +1,240 @@
-<!-- ========== Start  ========== -->
+<!doctype html>
+<html lang="en">
 
-    <!doctype html>
-    <html lang="en">
-        <head>
-            <title>Title</title>
-            <!-- Required meta tags -->
-            <meta charset="utf-8" />
-            <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1, shrink-to-fit=no"
-            />
-
-            <!-- Bootstrap CSS v5.2.1 -->
-            <link
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-                rel="stylesheet"
-                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-                crossorigin="anonymous"
-            />
-        </head>
-
-       <title>Diuth Induwara - About Me</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #4555ad; }
-        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
-        main { padding: 20px; max-width: 800px; margin: 20px auto; background-color: rgb(255, 255, 255); border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h2 { color: #333; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-        footer { text-align: center; padding: 1em 0; background-color: #333; color: white; position: fixed; bottom: 0; width: 100%; }
-    </style>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
+
+<title>Diuth Induwara - About Me</title>
+<style>
+    /* RESET/BASE STYLES */
+    body {
+        font-family: 'Poppins', sans-serif;
+        /* Use the modern font everywhere */
+        margin: 0;
+        padding: 0;
+        background-color: #c2c3ca;
+        /* Light gray background for the overall page */
+    }
+
+    /* HEADER CONTAINER STYLING (The Dark Section) */
+    .dark-container {
+        text-align: center;
+        background-color: #1a1a1a;
+        /* Deep charcoal background */
+        color: #f0f0f0;
+        /* Light text color for all content inside */
+        padding: 50px 0;
+    }
+
+    /* NAME STYLING */
+    .stylized-name-bold {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        /* Adjust margin above the tagline */
+    }
+
+    /* ACCENT COLOR (for the first name) */
+    .first-name {
+        color: #00bcd4;
+        /* Bright cyan accent */
+    }
+
+    /* TAGLINE STYLING */
+    .tagline {
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        margin-top: 0;
+    }
+
+    /* HOVER EFFECT (Demonstrates skill) */
+    .stylized-name-bold:hover {
+        opacity: 0.9;
+        /* Use transform on the H1 itself */
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    /* FOOTER STYLING */
+    footer {
+        text-align: center;
+        padding: 1em 0;
+        background-color: #333;
+        color: white;
+
+    }
+
+    /* Styling for your paragraph text */
+    .about-text {
+        font-family: 'Inter', sans-serif;
+        /* The attractive, clean font */
+        color: #1b1111;
+        /* Off-white color */
+
+        font-size: 1.1rem;
+        line-height: 1.6;
+        /* Good line spacing for readability */
+
+        text-align: center;
+
+        /* Adds professional spacing and limits the width for better reading flow */
+        max-width: 800px;
+        margin: 30px auto;
+        /* Centers the whole block and adds space */
+        padding: 0 20px;
+        /* Ensures padding on the sides for small screens */
+    }
+    .quali{
+                font-family: 'Inter', sans-serif;
+        /* The attractive, clean font */
+        color: #1b1111;
+        /* Off-white color */
+
+        font-size: 1.1rem;
+        line-height: 1.6;
+        /* Good line spacing for readability */
+
+    }
+    .image{
+
+      display: flex;
+    justify-content: center;
+    
+    /* Optional: Add vertical padding/margin to separate from other content */
+    padding: 40px 0; 
+    
+    /* Optional: If the image container has a dark background */
+    background-color: #c2c3ca;
+        
+    }
+  
+
+
+   .styled-image{ max-width: 20%;
+    height: auto;
+    display: block;
+
+    /* 1. Outline (Border) to Match Background */
+    /* Use a color slightly different than the main background for a subtle effect */
+       /* Slightly lighter charcoal border (8px is a good thickness) */
+    
+    /* 2. Optional: Rounded corners for a modern look */
+    border-radius: 4px; 
+    
+    /* 3. Optional: A subtle box-shadow for depth (professional touch) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);}
+
+.project-details {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    text-align: left;
+    max-width: 400px;
+}
+
+.project-details dt {
+    /* The label (e.g., "Stack Used") */
+    font-weight: 700; 
+    color: #00bcd4; /* Use your accent color */
+    float: left;
+    clear: left;
+    margin-right: 10px;
+}
+
+.project-details dd {
+    /* The value (e.g., "Laravel, JavaScript...") */
+    margin-left: 100px; /* Aligns the values */
+    margin-bottom: 8px;
+    color: #f0f0f0;
+}
+
+.github-plain-link {
+    color: #00bcd4; /* Ensures the link stands out */
+    text-decoration: underline;
+}
+.key{
+
+                font-family: 'Inter', sans-serif;
+        /* The attractive, clean font */
+        color: #1b1111;
+        /* Off-white color */
+
+        font-size: 1.1rem;
+        line-height: 1.6;
+        /* Good line spacing for readability */
+}
+</style>
+</head>
+
 <body>
-    <header>
-        <h1>About Diuth Induwara</h1>
-        </header>
 
-    <main>
-      <div>
-        <div class="row">
-            <div class="col-6">
-                <h2>A Little About Me</h2>
-        <i><b>Hello! My name is Diuth Induwara.</b></i>
-        <p>I am **22 years old**, and I am currently a student at a government university.</p>
-        <p>My area of study is **Music**, which I am passionate about.</p>
 
-        <h3>My Journey in Music</h3>
-        <p>
-                        My passion for music involves both performance and production. I am a versatile musician, proficient as a **Tabla player**, **Keyboardist**, and **Guitarist**, in addition to having vocal skills. Currently, I am expanding my knowledge into the technical side of the industry by focusing on **Audio Engineering** and the **Field Recording Arts** stream. This blend of musical artistry and technical skill allows me to perform, create original music tracks, and manage the sound production process.
-            
-        </p>
-            </div>  
-             <div class="col-6">
-                <img src="c3a81e4c-68e1-4d2f-8ac5-518bd9476a88.jpg" class="img-fluid" alt="Diuth Induwara"/>
-             </div>
+    <header class="dark-container">
+        <h1 class="stylized-name-bold">
+            <span class="first-name">DIUTH</span> INDUWARA
+        </h1>
+        <p class="tagline">Intermediate Web Developer & Musician</p>
+    </header>
+
+
+    <div class="about-text">
+        I'm Diuth Induwara, a developer and creative professional bridging the logic of code with the rhythm of art.
+        Trained in Full-Stack Development and Aesthetics (UoVPA) </div>
+
+        <div class="image">
+            <img src="new.jpg" alt="diuth induwara" class="styled-image">
         </div>
-      </div>  
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Diuth Induwara. Hosted via GitHub Pages.</p>
-    </footer>
+<div class="quali">
+    <u>Core Software Structure</u>: 
+  <li>Completed the NVQ Level 4 Software Development Course (VTA).</li>
+<li>Full-Stack Expertise: Gained 6 months of intensive, hands-on web development training at ACCIMT.<br></li>
+
+
+
+<li>I am actively seeking professional opportunities to apply this unique blend of skills and vision.</li>
+</div>
+
+<dl class="project-details">
+    <dt>Stack Used:</dt>
+    <dd>Laravel, JavaScript, PHP, MySQL, SCSS</dd>
+
+    <dt>Source Code:</dt>
+    <dd>
+        <a href="https://github.com/diuthsankalpa/diuthsankalpa.github.io" target="_blank" class="github-plain-link">
+            GitHub Repository Link
+        </a>
+    </dd>
+</dl>
+<div class="key">
+Key Languages & Frameworks
+<li>
+My technical foundation spans across environments, allowing me to build robust full-stack applications and interactive user interfaces.
+</li>
+<li>
+Languages: I work proficiently with PHP, JavaScript, Python, and Java.
+
+</li>
+<li>Frameworks: My primary full-stack framework is Laravel (PHP).
+</li>
+<li>
+Tools: I rely on Git and GitHub for version control and collaborative development.</li>
+</div>
 </body>
-    </html>
 
-<!-- ========== End  ========== -->
+
+<footer>
+    <p>&copy; 2025 Diuth Induwara. Hosted via GitHub Pages.</p>
+</footer>
+
+</html>

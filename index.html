@@ -177,22 +177,29 @@
 
 
 
-    .styled-image {
-        max-width: 10%;
-        height: auto;
-        display: block;
+.styled-image {
+    /* 1. Size & Display */
+    max-width: 150px; /* Set a specific size for a professional profile image */
+    height: 150px;   /* Ensure equal height for perfect circle */
+    display: block;  /* Ensures predictable behavior */
+    object-fit: cover; /* Important: Ensures the image fills the container without stretching */
 
-        /* 1. Outline (Border) to Match Background */
-        /* Use a color slightly different than the main background for a subtle effect */
-        /* Slightly lighter charcoal border (8px is a good thickness) */
+    /* 2. Professional Frame/Shape */
+    border: 6px solid #495057; /* Darker border for a clear, clean frame */
+    border-radius: 50%; /* Perfect Circle Shape */
+    
+    /* 3. Professional Depth */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Stronger, professional shadow */
 
-        /* 2. Optional: Rounded corners for a modern look */
-        border-radius: 4px;
+    /* Optional: Smooth transition for hover effects */
+    transition: all 0.3s ease-in-out;
+}
 
-        /* 3. Optional: A subtle box-shadow for depth (professional touch) */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    }
-
+/* Optional: Add a subtle hover effect for interactivity */
+.styled-image:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
     .project-details {
         margin-top: 20px;
         font-size: 0.95rem;
@@ -331,4 +338,5 @@
 </footer>
 
 </html>
+
 

@@ -95,122 +95,138 @@
         padding: 0 20px;
         /* Ensures padding on the sides for small screens */
     }
-  /* Card Container */
-.professional-card {
-    /* Dimensions and Alignment */
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
 
-    /* Appearance (The 'Transparent Look') */
-    background: rgba(255, 255, 255, 0.85); /* White with 85% opacity */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    border: 1px solid rgba(200, 200, 200, 0.5); /* Subtle border */
-    backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect */
+    /* Card Container */
+    .professional-card {
+        /* Dimensions and Alignment */
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
 
-    /* Typography */
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-/* Header/Title */
-.card-header {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #007bff; /* Professional blue */
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-/* List Styling */
-.card-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.card-list li {
-    margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
-    line-height: 1.4;
-}
-
-.card-list li::before {
-    content: "•"; /* Custom bullet point */
-    color: #007bff;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-/* Highlighted Text */
-.highlight {
-    font-weight: bold;
-    color: #333;
-}
-    .image{
-
-      display: flex;
-    justify-content: center;
+        /* Appearance (The 'Transparent Look') */
     
-    /* Optional: Add vertical padding/margin to separate from other content */
-    padding: 40px 0; 
-    
-    /* Optional: If the image container has a dark background */
-    background-color: #c2c3ca;
-        
+        /* White with 85% opacity */
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* Soft shadow */
+        border: 1px solid rgba(200, 200, 200, 0.5);
+        /* Subtle border */
+        backdrop-filter: blur(5px);
+        /* Optional: Adds a slight blur effect */
+
+        /* Typography */
+        font-family: Arial, sans-serif;
+        color: #333;
+        /* MODIFIED: Background Color with Transparency (80% opacity) */
+    background-color: rgba(194, 195, 202, 0.8);
     }
-  
+
+    /* Header/Title */
+    .card-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #007bff;
+        /* Professional blue */
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* List Styling */
+    .card-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-list li {
+        margin-bottom: 10px;
+        padding-left: 15px;
+        position: relative;
+        line-height: 1.4;
+    }
+
+    .card-list li::before {
+        content: "•";
+        /* Custom bullet point */
+        color: #007bff;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    /* Highlighted Text */
+    .highlight {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .image {
+
+        display: flex;
+        justify-content: center;
+
+        /* Optional: Add vertical padding/margin to separate from other content */
+        padding: 40px 0;
+
+        /* Optional: If the image container has a dark background */
+        background-color: #c2c3ca;
+
+    }
 
 
-   .styled-image{ max-width: 20%;
-    height: auto;
-    display: block;
 
-    /* 1. Outline (Border) to Match Background */
-    /* Use a color slightly different than the main background for a subtle effect */
-       /* Slightly lighter charcoal border (8px is a good thickness) */
-    
-    /* 2. Optional: Rounded corners for a modern look */
-    border-radius: 4px; 
-    
-    /* 3. Optional: A subtle box-shadow for depth (professional touch) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);}
+    .styled-image {
+        max-width: 20%;
+        height: auto;
+        display: block;
 
-.project-details {
-    margin-top: 20px;
-    font-size: 0.95rem;
-    text-align: left;
-    max-width: 400px;
-}
+        /* 1. Outline (Border) to Match Background */
+        /* Use a color slightly different than the main background for a subtle effect */
+        /* Slightly lighter charcoal border (8px is a good thickness) */
 
-.project-details dt {
-    /* The label (e.g., "Stack Used") */
-    font-weight: 700; 
-    color: #00bcd4; /* Use your accent color */
-    float: left;
-    clear: left;
-    margin-right: 10px;
-}
+        /* 2. Optional: Rounded corners for a modern look */
+        border-radius: 4px;
 
-.project-details dd {
-    /* The value (e.g., "Laravel, JavaScript...") */
-    margin-left: 100px; /* Aligns the values */
-    margin-bottom: 8px;
-    color: #f0f0f0;
-}
+        /* 3. Optional: A subtle box-shadow for depth (professional touch) */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
 
-.github-plain-link {
-    color: #00bcd4; /* Ensures the link stands out */
-    text-decoration: underline;
-}
-.key{
+    .project-details {
+        margin-top: 20px;
+        font-size: 0.95rem;
+        text-align: left;
+        max-width: 400px;
+    }
 
-                font-family: 'Inter', sans-serif;
+    .project-details dt {
+        /* The label (e.g., "Stack Used") */
+        font-weight: 700;
+        color: #00bcd4;
+        /* Use your accent color */
+        float: left;
+        clear: left;
+        margin-right: 10px;
+    }
+
+    .project-details dd {
+        /* The value (e.g., "Laravel, JavaScript...") */
+        margin-left: 100px;
+        /* Aligns the values */
+        margin-bottom: 8px;
+        color: #f0f0f0;
+    }
+
+    .github-plain-link {
+        color: #00bcd4;
+        /* Ensures the link stands out */
+        text-decoration: underline;
+    }
+
+    .key {
+
+        font-family: 'Inter', sans-serif;
         /* The attractive, clean font */
         color: #1b1111;
         /* Off-white color */
@@ -218,7 +234,7 @@
         font-size: 1.1rem;
         line-height: 1.6;
         /* Good line spacing for readability */
-}
+    }
 </style>
 </head>
 
@@ -237,57 +253,76 @@
         I'm Diuth Induwara, a developer and creative professional bridging the logic of code with the rhythm of art.
         Trained in Full-Stack Development and Aesthetics (UoVPA) </div>
 
-        <div class="image">
-            <img src="c3a81e4c-68e1-4d2f-8ac5-518bd9476a88.jpg" alt="diuth induwara" class="styled-image">
+    <div class="image">
+        <img src="c3a81e4c-68e1-4d2f-8ac5-518bd9476a88.jpg" alt="diuth induwara" class="styled-image">
+    </div>
+
+
+
+
+    <div class="professional-card">
+        <div class="card-header">
+            Core Software Qualifications
         </div>
 
-<div class="professional-card">
-    <div class="card-header">
-        Core Software Qualifications
+        <ul class="card-list">
+            <li>
+                <span class="highlight">Full-Stack Expertise:</span> PHP, Laravel (Expert Level)
+            </li>
+            <li>
+                Completed the <span class="highlight">NVQ Level 4 Software Development Course</span> (VTA).
+            </li>
+            <li>
+                Gained <span class="highlight">6 months of intensive, hands-on training</span> at the Arthur C. Clarke
+                Institute for Modern Technologies (<span class="highlight">ACCIMT</span>), Sri Lanka.
+            </li>
+        </ul>
+
+        <p style="margin-top: 20px; font-style: italic; font-size: 0.9em; text-align: center;">
+            Currently studying and actively seeking professional opportunities.
+        </p>
+           <dl class="project-details">
+        <dt>Stack Used:</dt>
+        <dd>Laravel, JavaScript, PHP, MySQL, SCSS</dd>
+
+        <dt>Source Code:</dt>
+        <dd>
+            <a href="https://github.com/diuthsankalpa/diuthsankalpa.github.io" target="_blank"
+                class="github-plain-link">
+                GitHub Repository Link
+            </a>
+        </dd>
+    </dl>
     </div>
+
+
+
+
+
+    <div class="professional-card">
+        <div class="card-header">
+ 
+   Key Languages & Frameworks
+        </div>
+            <ul class="card-list">
+     
+        
+        <li>
+            My technical foundation spans across environments, allowing me to build robust full-stack applications and
+            interactive user interfaces.
+        </li>
+        <li>
+            Languages: I work proficiently with PHP, JavaScript, Python, and Java.
+
+        </li>
+        <li>Frameworks: My primary full-stack framework is Laravel (PHP).
+        </li>
+        <li>
+        </ul>
+            Tools: I rely on Git and GitHub for version control and collaborative development.</li>
+    </div>
+        </div>
     
-    <ul class="card-list">
-        <li>
-            <span class="highlight">Full-Stack Expertise:</span> PHP, Laravel (Expert Level)
-        </li>
-        <li>
-            Completed the <span class="highlight">NVQ Level 4 Software Development Course</span> (VTA).
-        </li>
-        <li>
-            Gained <span class="highlight">6 months of intensive, hands-on training</span> at the Arthur C. Clarke Institute for Modern Technologies (<span class="highlight">ACCIMT</span>), Sri Lanka.
-        </li>
-    </ul>
-
-    <p style="margin-top: 20px; font-style: italic; font-size: 0.9em; text-align: center;">
-        Currently studying and actively seeking professional opportunities.
-    </p>
-</div>
-
-<dl class="project-details">
-    <dt>Stack Used:</dt>
-    <dd>Laravel, JavaScript, PHP, MySQL, SCSS</dd>
-
-    <dt>Source Code:</dt>
-    <dd>
-        <a href="https://github.com/diuthsankalpa/diuthsankalpa.github.io" target="_blank" class="github-plain-link">
-            GitHub Repository Link
-        </a>
-    </dd>
-</dl>
-<div class="key">
-Key Languages & Frameworks
-<li>
-My technical foundation spans across environments, allowing me to build robust full-stack applications and interactive user interfaces.
-</li>
-<li>
-Languages: I work proficiently with PHP, JavaScript, Python, and Java.
-
-</li>
-<li>Frameworks: My primary full-stack framework is Laravel (PHP).
-</li>
-<li>
-Tools: I rely on Git and GitHub for version control and collaborative development.</li>
-</div>
 </body>
 
 
@@ -296,6 +331,3 @@ Tools: I rely on Git and GitHub for version control and collaborative developmen
 </footer>
 
 </html>
-
-
-

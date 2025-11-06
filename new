@@ -1,1 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<title>Diuth Induwara - About Me</title>
+<style>
+    /* RESET/BASE STYLES */
+    body {
+        font-family: 'Poppins', sans-serif;
+        /* Use the modern font everywhere */
+        margin: 0;
+        padding: 0;
+        background-color: #c2c3ca;
+        /* Light gray background for the overall page */
+    }
+
+    /* HEADER CONTAINER STYLING (The Dark Section) */
+    .dark-container {
+        text-align: center;
+        background-color: #1a1a1a;
+        /* Deep charcoal background */
+        color: #f0f0f0;
+        /* Light text color for all content inside */
+        padding: 50px 0;
+    }
+
+    /* NAME STYLING */
+    .stylized-name-bold {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        /* Adjust margin above the tagline */
+    }
+
+    /* ACCENT COLOR (for the first name) */
+    .first-name {
+        color: #00bcd4;
+        /* Bright cyan accent */
+    }
+
+    /* TAGLINE STYLING */
+    .tagline {
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        margin-top: 0;
+    }
+
+    /* HOVER EFFECT (Demonstrates skill) */
+    .stylized-name-bold:hover {
+        opacity: 0.9;
+        /* Use transform on the H1 itself */
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    /* FOOTER STYLING */
+    footer {
+        text-align: center;
+        padding: 1em 0;
+        background-color: #333;
+        color: white;
+
+    }
+
+    /* Styling for your paragraph text */
+    .about-text {
+        font-family: 'Inter', sans-serif;
+        /* The attractive, clean font */
+        color: #1b1111;
+        /* Off-white color */
+
+        font-size: 1.1rem;
+        line-height: 1.6;
+        /* Good line spacing for readability */
+
+        text-align: center;
+
+        /* Adds professional spacing and limits the width for better reading flow */
+        max-width: 800px;
+        margin: 30px auto;
+        /* Centers the whole block and adds space */
+        padding: 0 20px;
+        /* Ensures padding on the sides for small screens */
+    }
+
+    /* Card Container */
+    .professional-card {
+        /* Dimensions and Alignment */
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+
+        /* Appearance (The 'Transparent Look') */
+    
+        /* White with 85% opacity */
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* Soft shadow */
+        border: 1px solid rgba(200, 200, 200, 0.5);
+        /* Subtle border */
+        backdrop-filter: blur(5px);
+        /* Optional: Adds a slight blur effect */
+
+        /* Typography */
+        font-family: Arial, sans-serif;
+        color: #333;
+        /* MODIFIED: Background Color with Transparency (80% opacity) */
+    background-color: rgba(194, 195, 202, 0.8);
+    }
+
+    /* Header/Title */
+    .card-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #007bff;
+        /* Professional blue */
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* List Styling */
+    .card-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-list li {
+        margin-bottom: 10px;
+        padding-left: 15px;
+        position: relative;
+        line-height: 1.4;
+    }
+
+    .card-list li::before {
+        content: "•";
+        /* Custom bullet point */
+        color: #007bff;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    /* Highlighted Text */
+    .highlight {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .image {
+
+        display: flex;
+        justify-content: center;
+
+        /* Optional: Add vertical padding/margin to separate from other content */
+        padding: 10px 0;
+
+        /* Optional: If the image container has a dark background */
+        background-color: #c2c3ca;
+
+    }
+
+
+
+.styled-image {
+    /* 1. Size & Display */
+    max-width: 150px; /* Set a specific size for a professional profile image */
+    height: 150px;   /* Ensure equal height for perfect circle */
+    display: block;  /* Ensures predictable behavior */
+    object-fit: cover; /* Important: Ensures the image fills the container without stretching */
+
+    /* 2. Professional Frame/Shape */
+    border: 6px solid #495057; /* Darker border for a clear, clean frame */
+    border-radius: 50%; /* Perfect Circle Shape */
+    
+    /* 3. Professional Depth */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Stronger, professional shadow */
+
+    /* Optional: Smooth transition for hover effects */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Add a subtle hover effect for interactivity */
+.styled-image:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+    .project-details {
+        margin-top: 20px;
+        font-size: 0.95rem;
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .project-details dt {
+        /* The label (e.g., "Stack Used") */
+        font-weight: 700;
+        color: #00bcd4;
+        /* Use your accent color */
+        float: left;
+        clear: left;
+        margin-right: 10px;
+    }
+
+    .project-details dd {
+        /* The value (e.g., "Laravel, JavaScript...") */
+        margin-left: 100px;
+        /* Aligns the values */
+        margin-bottom: 8px;
+        color: #f0f0f0;
+    }
+
+    .github-plain-link {
+        color: #00bcd4;
+        /* Ensures the link stands out */
+        text-decoration: underline;
+    }
+
+    .key {
+
+        font-family: 'Inter', sans-serif;
+        /* The attractive, clean font */
+        color: #1b1111;
+        /* Off-white color */
+
+        font-size: 1.1rem;
+        line-height: 1.6;
+        /* Good line spacing for readability */
+    }
+</style>
+</head>
+
+<body>
+
+
+    <header class="dark-container">
+        <h1 class="stylized-name-bold">
+            <span class="first-name">DIUTH</span> INDUWARA
+        </h1>
+        <p class="tagline">Intermediate Web Developer & Musician</p>
+    </header>
+
+
+    <div class="about-text">
+        I'm Diuth Induwara, a developer and creative professional bridging the logic of code with the rhythm of art.
+        Trained in Full-Stack Development and Aesthetics (UoVPA) </div>
+
+    <div class="image">
+        <img src="c3a81e4c-68e1-4d2f-8ac5-518bd9476a88.jpg" alt="diuth induwara" class="styled-image">
+    </div>
+
+
+
+
+    <div class="professional-card">
+        <div class="card-header">
+            Core Software Qualifications
+        </div>
+
+        <ul class="card-list">
+            <li>
+                <span class="highlight">Full-Stack Expertise:</span> PHP, Laravel (Expert Level)
+            </li>
+            <li>
+                Completed the <span class="highlight">NVQ Level 4 Software Development Course</span> (VTA).
+            </li>
+            <li>
+                Gained <span class="highlight">6 months of intensive, hands-on training</span> at the Arthur C. Clarke
+                Institute for Modern Technologies (<span class="highlight">ACCIMT</span>), Sri Lanka.
+            </li>
+        </ul>
+
+        <p style="margin-top: 20px; font-style: italic; font-size: 0.9em; text-align: center;">
+            Currently studying and actively seeking professional opportunities.
+        </p>
+           <dl class="project-details">
+        <dt>Stack Used:</dt>
+        <dd>Laravel, JavaScript, PHP, MySQL, SCSS</dd>
+
+        <dt>Source Code:</dt>
+        <dd>
+            <a href="https://github.com/diuthsankalpa/diuthsankalpa.github.io" target="_blank"
+                class="github-plain-link">
+                GitHub Repository Link
+            </a>
+        </dd>
+    </dl>
+    </div>
+
+
+
+
+
+    <div class="professional-card">
+        <div class="card-header">
+ 
+   Key Languages & Frameworks
+        </div>
+            <ul class="card-list">
+     
+        
+        <li>
+            My technical foundation spans across environments, allowing me to build robust full-stack applications and
+            interactive user interfaces.
+        </li>
+        <li>
+            Languages: I work proficiently with PHP, JavaScript, Python, and Java.
+
+        </li>
+        <li>Frameworks: My primary full-stack framework is Laravel (PHP).
+        </li>
+        <li>
+        </ul>
+            Tools: I rely on Git and GitHub for version control and collaborative development.</li>
+    </div>
+        </div>
+    
+</body>
+
+
+<footer>
+    <p>&copy; 2025 Diuth Induwara. Hosted via GitHub Pages.</p>
+</footer>
+
+</html>
+
 

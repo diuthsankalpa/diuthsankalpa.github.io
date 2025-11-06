@@ -1,0 +1,58 @@
+
+    .navbar{background-color:  #eeecec;}
+    
+    /* Set consistent size for carousel images */
+    .carousel-item {
+      height: 700px;
+      /* Adjust height as needed */
+    }
+
+    .carousel-img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      /* Keeps aspect ratio without distortion */
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .logo-bar {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo-bar img {
+      margin: 0 40px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .logo-bar img:hover {
+      filter: grayscale(0%);
+    }
+    .card{
+      width: 80%;
+      height:min-content
+    }
+    .hero {
+  height: 90vh;
+  background: url('../images/Gemini_Generated_Image_ugjqoqugjqoqugjq.png') center/cover no-repeat;
+  background-attachment: fixed;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}

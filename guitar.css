@@ -1,5 +1,5 @@
 
-    .navbar{background-color:  #3676d6;}
+ .navbar{background-color:  #3676d6;}
     
     /* Set consistent size for carousel images */
     .carousel-item {
@@ -56,5 +56,6 @@
   background-attachment: fixed;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+
 
 

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Ninnada Studio | Premium Audio Engineering</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "accent": "#C5A368", // Champagne Gold
+              "background-dark": "#0A0A0A",
+              "slate-custom": "#161616",
+              "border-subtle": "#262626"
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #0A0A0A;
+        }
+        /* Refined Studio Gradient */
+        .studio-overlay {
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 1) 100%);
+        }
+        /* Custom scrollbar for professional feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0A0A0A; }
+        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #C5A368; }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 10, 0.8);
+        }
+    </style>
+</head>
+
+<body class="text-slate-300 font-display">
+
+<header class="fixed top-0 w-full z-50 border-b border-border-subtle nav-blur">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <span class="text-accent material-symbols-outlined text-3xl">brand_awareness</span>
+            <h1 class="text-lg font-bold tracking-[0.3em] uppercase text-white">NINNADA</h1>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-[11px] uppercase tracking-widest font-semibold hover:text-accent transition-colors" href="#services">Services</a>
+            <a class="text-[11px] uppercase tracking-widest font-semibold hover:text-accent transition-colors" href="#pricing">Packages</a>
+            <a class="text-[11px] uppercase tracking-widest font-semibold hover:text-accent transition-colors" href="#equipment">Arsenal</a>
+        </nav>
+        <div class="flex items-center gap-6">
+            <a href="https://wa.me/94765817825" class="bg-accent text-black px-6 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-tighter hover:bg-white transition-all">
+                Contact Studio
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 studio-overlay z-10"></div>
+            <img alt="Studio" class="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop"/>
+        </div>
+        <div class="relative z-20 text-center max-w-4xl px-6">
+            <span class="inline-block px-4 py-1 border border-accent/30 text-accent text-[10px] font-bold tracking-[0.4em] uppercase mb-8">
+                Premium Production House
+            </span>
+            <h1 class="text-6xl md:text-8xl font-light text-white tracking-tighter mb-8 leading-none">
+                Silence is <span class="text-accent font-medium italic">Sculpted.</span>
+            </h1>
+            <p class="text-base md:text-lg text-slate-400 font-light mb-12 max-w-xl mx-auto leading-relaxed">
+                Mathugama's elite boutique studio for artists who value sonic integrity and uncompromising quality.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#pricing" class="px-10 py-4 bg-white text-black rounded-full font-bold text-sm hover:bg-accent transition-colors">View Packages</a>
+                <a href="#equipment" class="px-10 py-4 border border-border-subtle text-white rounded-full font-bold text-sm hover:bg-white/5 transition-colors">The Equipment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-background-dark" id="services">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border-subtle border border-border-subtle rounded-2xl overflow-hidden">
+                <div class="p-12 bg-background-dark hover:bg-slate-custom transition-colors group">
+                    <span class="material-symbols-outlined text-3xl text-accent mb-6">mic_external_on</span>
+                    <h4 class="text-xl font-semibold text-white mb-4 tracking-tight">Vocal Engineering</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">High-fidelity tracking through Class-A signal chains to capture the soul of the performance.</p>
+                </div>
+                <div class="p-12 bg-background-dark hover:bg-slate-custom transition-colors">
+                    <span class="material-symbols-outlined text-3xl text-accent mb-6">instant_mix</span>
+                    <h4 class="text-xl font-semibold text-white mb-4 tracking-tight">Sonic Mixing</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Precision balancing and spatial enhancement using world-class analog emulation and digital tools.</p>
+                </div>
+                <div class="p-12 bg-background-dark hover:bg-slate-custom transition-colors">
+                    <span class="material-symbols-outlined text-3xl text-accent mb-6">waves</span>
+                    <h4 class="text-xl font-semibold text-white mb-4 tracking-tight">Digital Mastering</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">The final polish. Optimized for global streaming platforms with perfect tonal balance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 border-y border-border-subtle" id="pricing">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h3 class="text-3xl font-light text-white tracking-tight">Studio Investments</h3>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="p-10 rounded-2xl bg-slate-custom/50 border border-border-subtle">
+                    <h4 class="text-xs font-bold text-accent uppercase tracking-[0.2em] mb-4">Essential</h4>
+                    <div class="text-2xl text-white font-medium mb-8">LKR 15,000</div>
+                    <ul class="space-y-4 mb-12">
+                        <li class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="material-symbols-outlined text-accent text-sm">check</span> 2 Hours Tracking
+                        </li>
+                        <li class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="material-symbols-outlined text-accent text-sm">check</span> Standard Mix
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 rounded-full border border-border-subtle text-[10px] font-bold uppercase tracking-widest hover:border-accent hover:text-accent transition-all">Request Session</button>
+                </div>
+                <div class="p-10 rounded-2xl bg-white text-black transform lg:-translate-y-4 shadow-2xl">
+                    <h4 class="text-xs font-bold text-accent uppercase tracking-[0.2em] mb-4">Recommended</h4>
+                    <div class="text-4xl font-bold mb-8">LKR 35,000</div>
+                    <ul class="space-y-4 mb-12">
+                        <li class="flex items-center gap-3 text-xs font-bold">
+                            <span class="material-symbols-outlined text-accent text-sm">check_circle</span> Unlimited Vocals (4h)
+                        </li>
+                        <li class="flex items-center gap-3 text-xs font-bold">
+                            <span class="material-symbols-outlined text-accent text-sm">check_circle</span> Advanced Analog Mix
+                        </li>
+                        <li class="flex items-center gap-3 text-xs font-bold">
+                            <span class="material-symbols-outlined text-accent text-sm">check_circle</span> Professional Master
+                        </li>
+                    </ul>
+                    <button class="w-full py-4 bg-black text-white rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-accent transition-all">Book Gold Session</button>
+                </div>
+                <div class="p-10 rounded-2xl bg-slate-custom/50 border border-border-subtle">
+                    <h4 class="text-xs font-bold text-accent uppercase tracking-[0.2em] mb-4">Elite</h4>
+                    <div class="text-2xl text-white font-medium mb-8">LKR 75,000</div>
+                    <ul class="space-y-4 mb-12">
+                        <li class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="material-symbols-outlined text-accent text-sm">check</span> Full Day Access
+                        </li>
+                        <li class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="material-symbols-outlined text-accent text-sm">check</span> Lyricist Consultation
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 rounded-full border border-border-subtle text-[10px] font-bold uppercase tracking-widest hover:border-accent hover:text-accent transition-all">Request Session</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6" id="equipment">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+            <div class="lg:w-1/2">
+                <h2 class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6">The Arsenal</h2>
+                <h3 class="text-4xl font-light text-white mb-8">Precision Tools.</h3>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <span class="text-accent material-symbols-outlined">settings_input_component</span>
+                        <div>
+                            <h5 class="text-white font-medium">Neumann Engineering</h5>
+                            <p class="text-sm text-slate-500">The gold standard in microphones, ensuring every vocal frequency is preserved.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="text-accent material-symbols-outlined">surround_sound</span>
+                        <div>
+                            <h5 class="text-white font-medium">Universal Audio</h5>
+                            <p class="text-sm text-slate-500">Unrivaled A/D conversion and legendary pre-amp emulations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                <img class="rounded-2xl border border-border-subtle grayscale hover:grayscale-0 transition-all duration-700" src="https://images.unsplash.com/photo-1559732277-7453b141e3a1?q=80&w=2070&auto=format&fit=crop"/>
+                <img class="rounded-2xl border border-border-subtle mt-12 grayscale hover:grayscale-0 transition-all duration-700" src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=1887&auto=format&fit=crop"/>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-background-dark border-t border-border-subtle py-20 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div>
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-accent material-symbols-outlined">brand_awareness</span>
+                <h2 class="text-sm font-bold tracking-widest uppercase text-white">NINNADA STUDIO</h2>
+            </div>
+            <p class="text-xs text-slate-600 leading-loose"> Boutique music production focused on high-fidelity audio capture in Mathugama, Sri Lanka.</p>
+        </div>
+        <div>
+            <h5 class="text-white text-xs font-bold uppercase tracking-widest mb-6">Location</h5>
+            <p class="text-xs text-slate-500">Neboda Road, Mathugama<br/>Sri Lanka</p>
+        </div>
+        <div>
+            <h5 class="text-white text-xs font-bold uppercase tracking-widest mb-6">Inquiries</h5>
+            <p class="text-xs text-slate-500">+94 76 58 17 825<br/>studio@ninnada.com</p>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-20 text-[10px] text-slate-800 uppercase tracking-widest flex justify-between">
+        <p>© 2026 Ninnada Studio</p>
+        <p>Acoustically Perfected</p>
+    </div>
+</footer>
+
+</body>
+</html>
